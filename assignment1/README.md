@@ -19,9 +19,9 @@ collaboration for your class project, or for other classes.
 #### Just Cloning the Class Repository
 You don't need a GitHub account for just cloning the class repository. Just do:
 
-`git clone https://github.com/umddb/cmsc424-spring2020.git`
+`git clone https://github.com/umddb/cmsc424-fall2020.git`
 
-You can do `git pull` (from within the `cmsc424-spring2020` directory) to fetch the newly added material. 
+You can do `git pull` (from within the `cmsc424-fall2020` directory) to fetch the newly added material. 
 
 *NOTE*: If you are having trouble installing `git`, you can just download the files instead (as a zipfile), although updating may become tedious. 
 
