@@ -36,7 +36,7 @@ details: https://education.github.com/
     - Go to Profile: https://github.com/settings/profile, and SSH Keys (or directly: https://github.com/settings/ssh)
     - Add SSH Key
 - Clone the class repository:
-    - In Terminal: `git clone git@github.com:umddb/cmsc424-spring2020.git`
+    - In Terminal: `git clone git@github.com:umddb/cmsc424-fall2020.git`
     - The master branch should be checked out in a new directory 
 - Familiarize yourself with the basic git commands
     - At a minimum, you would need to know: `clone`, `add`, `commit`, `push`, `pull`, `status`
