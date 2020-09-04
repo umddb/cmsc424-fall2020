@@ -61,6 +61,7 @@ details: https://education.github.com/
     - `vagrant suspend`: will save the current running state of the machine and stop it. When you do `vagrant up` again, it will restart with that state.
     - `vagrant halt`: will shutdown the machine.
 
+- You now have a virtual machine with PostgreSQL, Python 3, Jupyter notebooks and the required dependencies completely setup. To access them, simply `ssh` into your virtual machine by using `vagrant ssh` and running the required commands (listed in the following sections).
 
 ---
 
