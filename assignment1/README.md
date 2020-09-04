@@ -152,8 +152,8 @@ This will start a server on the VM, listening on port 8888. We will access it fr
 
 Q. Hyper-V error while running `vagrant up`. (Stderr: VBoxManage.exe: error: Not in a hypervisor partition (HVP=0) (VERR\_NEM\_NOT\_AVAILABLE).)
 
-* Hardware virtualization is often not enabled by default. Enable virtualization in your system. You follow instructions listed [here](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/).
+  * Hardware virtualization is often not enabled by default. Enable virtualization in your system. You can follow instructions listed [here](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/).
 
 Q. Can't find jupyter / python / psql.
 
-* Please ensure that you are running the command after you ssh into your vagrant box using `vagrant ssh`.
+  * Please ensure that you are running the command after you ssh into your vagrant box using `vagrant ssh`.
