@@ -61,6 +61,7 @@ details: https://education.github.com/
     - `vagrant suspend`: will save the current running state of the machine and stop it. When you do `vagrant up` again, it will restart with that state.
     - `vagrant halt`: will shutdown the machine.
 
+- You now have a virtual machine with PostgreSQL, Python 3, Jupyter notebooks and the required dependencies completely setup. To access them, simply `ssh` into your virtual machine by using `vagrant ssh` and running the required commands (listed in the following sections).
 
 ---
 
@@ -146,3 +147,13 @@ This will start a server on the VM, listening on port 8888. We will access it fr
 * You should see the Notebooks in the `assignment1/` directory. Click to open the "Jupyter Getting Started" Notebook, and follow the instruction therein.
 
 * The second Notebook ("Basics of SQL") covers basics of SQL, by connecting to your local PostgreSQL instance. The Notebook also serves as an alternative mechanism to run queries. However, in order to use that, you must set up a password in `psql` using `\password` (set the password to be `vagrant`).
+
+#### Common errors / FAQs
+
+Q. Hyper-V error while running `vagrant up`. (Stderr: VBoxManage.exe: error: Not in a hypervisor partition (HVP=0) (VERR\_NEM\_NOT\_AVAILABLE).)
+
+  * Hardware virtualization is often not enabled by default. Enable virtualization in your system. You can follow instructions listed [here](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/).
+
+Q. Can't find jupyter / python / psql.
+
+  * Please ensure that you are running the command after you ssh into your vagrant box using `vagrant ssh`.
