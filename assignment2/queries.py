@@ -95,7 +95,7 @@ select 0;
 ### Each county+state combination should only appear once in the output.
 ### HINT: Use "not in".
 ### Output Columns: countyname, statename
-### Order by name, statecode ascending
+### Order by countyname, statename ascending
 queries[10] = """
 select 0;
 """
