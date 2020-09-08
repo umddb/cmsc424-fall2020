@@ -1,7 +1,7 @@
 queries = ["" for i in range(0, 17)]
 
 ### 0. Report the votes for the normal (i.e, not special) Senate Election in Maryland in 2018.
-### Output column order: candidatename, candidatevotes
+### Output column order: candidatename, partyname, candidatevotes
 ### Order by candidatename ascending
 queries[0] = """
 select candidatename, partyname, candidatevotes
@@ -146,6 +146,9 @@ from temp t;
 ### to None. We will do this through use of two temporary tables using WITH
 ### clause. You have to complete this query using a "full outer join" to get the 
 ### desired result.
+###
+### NOTE: Only output those tuples where both the statecodes are not NULL.
+###
 ### Output: statecode, countname2000, countyname2016, votes2000, votes2016
 ### Order by: statecode, countyname2000, countyname2016 ascending
 queries[13] = """
