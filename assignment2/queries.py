@@ -147,10 +147,8 @@ from temp t;
 ### clause. You have to complete this query using a "full outer join" to get the 
 ### desired result.
 ###
-### NOTE: Only output those tuples where both the statecodes are not NULL.
-###
-### Output: statecode, countname2000, countyname2016, votes2000, votes2016
-### Order by: statecode, countyname2000, countyname2016 ascending
+### Output: statecode2000 (from temp1), statecode2016 (from temp2), countname2000, countyname2016, votes2000, votes2016
+### Order by: statecode2000, statecode2016, countyname2000, countyname2016 ascending
 queries[13] = """
 with temp1 as (select countyname, statecode, candidatevotes
                from pres_county_returns
