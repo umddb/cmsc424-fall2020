@@ -1,4 +1,4 @@
-## Assignment 2: SQL Assignment - Part 1, CMSC424, Fall 2016
+## Assignment 2: SQL Assignment - Part 1, CMSC424, Fall 2020
 
 *The assignment is to be done by yourself.*
 
