@@ -9,11 +9,11 @@ It also assumed you have cloned the git repository, and have done a `git pull` t
 1. populate.sql: The SQL script for creating the data.
 1. queries.py: The file where to enter your answer
 1. SQLTesting.py: File to be used for running the queries (in `queries.py`) against the database, and generate the file to be submitted.
-1. Vagrantfile: A Vagrantfile that creates the `olympics` database and populates it using `populate.sql` file.
+1. Vagrantfile: A Vagrantfile that creates the `elections` database and populates it using `populate.sql` file.
 
 ### Getting started
 Start the VM with `vagrant up` in the `assignment2/` directory. The database should already be set up, but if not: 
-- Create a new database called `olympics` and switch to it (see the PostgreSQL setup instructions).
+- Create a new database called `elections` and switch to it (see the PostgreSQL setup instructions).
 - Run `\i populate.sql` to create and populate the tables. 
 
 ### Schema 
