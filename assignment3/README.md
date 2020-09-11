@@ -1,19 +1,19 @@
-## Assignment 2: SQL Assignment - Part 1, CMSC424, Fall 2016
+## Assignment 3: SQL Assignment - Part 2, CMSC424, Fall 2020
 
 *The assignment is to be done by yourself.*
 
 The following assumes you have gone through PostgreSQL instructions and have ran some queries on the `university` database. 
-It also assumed you have cloned the git repository, and have done a `git pull` to download the directory `assignment2`. The files are:
+It also assumed you have cloned the git repository, and have done a `git pull` to download the directory `assignment3`. The files are:
 
 1. README.md: This file
 1. populate.sql: The SQL script for creating the data.
-1. queries.py: The file where to enter your answer
-1. SQLTesting.py: File to be used for running the queries (in `queries.py`) against the database, and generate the file to be submitted.
-1. Vagrantfile: A Vagrantfile that creates the `olympics` database and populates it using `populate.sql` file.
+1. queries.py: The file where to enter your answer and to upload to Gradescope.
+1. SQLTesting.py: File to be used for running the queries (in `queries.py`) against the database.
+1. Vagrantfile: A Vagrantfile that creates the `elections` database and populates it using `populate.sql` file.
 
 ### Getting started
-Start the VM with `vagrant up` in the `assignment2/` directory. The database should already be set up, but if not: 
-- Create a new database called `olympics` and switch to it (see the PostgreSQL setup instructions).
+Start the VM with `vagrant up` in the `assignment3/` directory. The database should already be set up, but if not: 
+- Create a new database called `elections` and switch to it (see the PostgreSQL setup instructions).
 - Run `\i populate.sql` to create and populate the tables. 
 
 ### Schema 
@@ -52,7 +52,7 @@ You are also provided with a Python file `SQLTesting.py` for testing your answer
 - **Note**: We will essentially run a modified version of `SQLTesting.py` that compares the returned answers against correct answers. So it imperative that `python3 SQLTesting.py` runs without errors.
 
 ### Submission Instructions
-Submit the `queries.py` file on Gradescope under Assignment 2. 
+Submit the `queries.py` file on Gradescope under Assignment 3. 
       
 ### Assignment Questions
 See `queries.py` file.
