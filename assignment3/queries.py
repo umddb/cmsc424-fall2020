@@ -51,7 +51,7 @@ queries[5] = """
 select 0;
 """
 
-### 6. Write a query to construct a table:
+### 6. Write a query to construct the following result:
 ###     (statecode, total_votes_2008, total_votes_2012)
 ### to count the total number of votes by state for Barack Obama in the two elections.
 ###
@@ -63,7 +63,8 @@ queries[6] = """
 select 0;
 """
 
-### 7. Create a table to list the disparity between the populations listed in 'states' table and those listed in 'counties' table for 1950 and 2010.
+### 7. Write a query to find the disparity between the populations listed in 'states' table and those listed in 'counties' 
+### table for 1950 and 2010.
 ### Result should be: 
 ###        (statename, disparity_1950, disparity_2010)
 ### So disparity_1950 = state population 1950 - sum of population_1950 for the counties in that state
@@ -80,7 +81,7 @@ queries[8] = """
 select 0;
 """
 
-### 9. List all counties and their basic information that have a unique name across all states. 
+### 9. Write a query to find all counties (and their basic information) that have a unique name across all states. 
 ### Use scalar subqueries to simplify the query.
 ### Output columns: all attributes of counties (name, statecode, population_1950, population_2010)
 ### Order by name, statecode
@@ -121,7 +122,7 @@ select 0;
 
 
 
-### 12. Create a table listing the months and the number of states that were admitted to the union (admitted_to_union field) in that month.
+### 12. Write a query listing the months and the number of states that were admitted to the union (admitted_to_union field) in that month.
 ### Use 'extract' for operating on dates, and the ability to create a small inline table in SQL. For example, try:
 ###         select * from (values(1, 'Jan'), (2, 'Feb')) as x;
 ###
