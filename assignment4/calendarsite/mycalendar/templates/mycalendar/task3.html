@@ -1,0 +1,8 @@
+{% if company %}
+    <h3> Users in the Company {{ company }}</h3>
+    <ul>
+    {% for i in company_users %}
+        <li><a href="/mycalendar/user/{{ i.id }}/">{{ i.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}

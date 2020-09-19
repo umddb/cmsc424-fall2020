@@ -1,0 +1,21 @@
+{% if user_list %}
+Available Users:
+    <ul>
+    {% for i in user_list %}
+        <li><a href="/mycalendar/user/{{ i.id }}/">{{ i.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No users are available.</p>
+{% endif %}
+
+{% if event_list %}
+Available Events:
+    <ul>
+    {% for e in event_list %}
+        <li><a href="/mycalendar/event/{{ e.id }}/">{{ e.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No events are available.</p>
+{% endif %}

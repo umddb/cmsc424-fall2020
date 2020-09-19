@@ -1,0 +1,10 @@
+{% if month_events %}
+Events in Month {{ month }}:
+    <ul>
+    {% for e in month_events %}
+        <li><a href="/mycalendar/event/{{ e.id }}/">{{ e.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No events in Month {{ month }}</p>
+{% endif %}
