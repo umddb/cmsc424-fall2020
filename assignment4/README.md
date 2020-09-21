@@ -87,4 +87,4 @@ pieces need to be fixed.
 
 
 ### Submission
-Zip the `queries.py` file from the SQL part, and the following files together into a single zip file and upload it: `userindex.html`, `eventindex.html`, `urls.py`, `views.py`, 'task2.html`, and `task5.html`.
+Zip the `queries.py` file from the SQL part, and the following files together into a single zip file and upload it: `userindex.html`, `eventindex.html`, `urls.py`, `views.py`, `task2.html`, and `task5.html`.
