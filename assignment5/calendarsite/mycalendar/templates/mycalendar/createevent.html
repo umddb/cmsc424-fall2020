@@ -1,0 +1,19 @@
+<h3>Create a new Event</h3>
+
+<form action="/mycalendar/user/{{ user.id }}/submitcreateevent/" method="post">
+{% csrf_token %}
+
+<label>Event Title:</label> <input id="title" type="text" name="title" value=""/> <br>
+<label>Start Time (as "YYYY-MM-DD HH:MM"):</label> <input id="start_time" type="text" name="start_time" value=""/> <br>
+<label>End Time (as "YYYY-MM-DD HH:MM"):</label> <input id="end_time" type="text" name="end_time" value=""/>
+
+<h4>Choose which calendars to invite:</h4>
+<ul>
+{% for c in calendar_list %}
+<li> {{ c.title }}: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<label>Invite <input type="radio" name="answer{{ c.id }}"  value="true" checked="checked"/> </label> 
+<label>Don't Invite <input type="radio" name="answer{{ c.id }}"  value="false" /> </label>
+{% endfor %}
+</ul>
+<input type="submit" value="Submit Event" />
+</form>

@@ -1,0 +1,37 @@
+{% if calendar_id %}
+    <h4> List of Calendar Events </h4>
+    <!-- <table style="border:2px solid black; padding: 10px; border-collapse: collapse">
+        <tr>
+            <th style="border:2px solid black">Event Title</th>
+            <th style="border:2px solid black">Start Time</th>
+            <th style="border:2px solid black">End Time</th>
+        </tr>
+    {% for e in event_list %}
+    <tr>
+        <td style="border:2px solid black"><a href="{% url 'eventindex' e.id %}">{{ e.title }}</a>
+        <td style="border:2px solid black"> {{ e.start_time }}
+        <td style="border:2px solid black"> {{ e.end_time }}
+    </tr>
+    </tr>
+    {% endfor %} -->
+
+    {% for k, v in date_list.items %}
+    <h3>{{ k }}</h3>
+        <table style="border:2px solid black; padding: 10px; border-collapse: collapse">
+        <tr>
+            <th style="border:2px solid black">Event Title</th>
+            <th style="border:2px solid black">Start Time</th>
+            <th style="border:2px solid black">End Time</th>
+        </tr>
+        {% for items in v %}
+        <tr>
+            <td style="border:2px solid black"><a href="{% url 'eventindex' items.id %}">{{ items.title }}</a>
+            <td style="border:2px solid black">{{ items.start_time }}
+            <td style="border:2px solid black">{{ items.end_time }}
+        </tr>
+        {% endfor %}
+        </table>
+        <br>
+    {% endfor %}
+
+{% endif %}

@@ -1,0 +1,8 @@
+{% if user %}
+    <h4> List of Calendars for {{ user.name }}</h4>
+    <ul>
+    {% for c in calendar_list %}
+    <li> <a href="/mycalendar/calendar/{{ c.id }}">{{ c.title }}</a>: {{ c.description }}
+    {% endfor %}
+    </ul>
+{% endif %}

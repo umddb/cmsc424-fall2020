@@ -1,0 +1,46 @@
+{
+    "statecode": "MD",
+    "year": 2008,
+    "presidential": [
+        {
+            "countyname": "Fake",
+            "votes": [
+            {
+                "candidatename": "Barack Obama",
+                "partyname": "democrat",
+                "candidatevotes": 1000000
+            },
+            {
+                "candidatename": "John McCain",
+                "partyname": "republican",
+                "candidatevotes": 1000000
+            },
+            {
+                "candidatename": "Other",
+                "partyname": "NA",
+                "candidatevotes": 1000
+            }
+            ]
+        },
+        {
+            "countyname": "Fake2",
+            "votes": [
+            {
+                "candidatename": "Barack Obama",
+                "partyname": "democrat",
+                "candidatevotes": 1000000
+            },
+            {
+                "candidatename": "John McCain",
+                "partyname": "republican",
+                "candidatevotes": 1000000
+            },
+            {
+                "candidatename": "Other",
+                "partyname": "NA",
+                "candidatevotes": 1000
+            }
+            ]
+        }
+    ]
+}

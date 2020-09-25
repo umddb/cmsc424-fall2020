@@ -1,0 +1,10 @@
+<h3>Create a new Calendar</h3>
+
+<form action="/mycalendar/user/{{ user.id }}/submitcreatecalendar/" method="post">
+{% csrf_token %}
+
+<label>Calendar Title:</label> <input id="title" type="text" name="title" value=""/> <br>
+<label>Calendar Description:</label> <input id="title" type="text" name="description" value=""/> <br>
+
+<input type="submit" value="Submit Event" />
+</form>

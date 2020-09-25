@@ -1,0 +1,10 @@
+{% if user_list %}
+Who are you?
+    <ul>
+    {% for i in user_list %}
+        <li><a href="/mycalendar/user/{{ i.id }}/">{{ i.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No users are available.</p>
+{% endif %}
