@@ -41,7 +41,7 @@ At a high level, the following things need to be done in order to set up a minim
 * In each of the `views`, we need to collect the appropriate data, and call a `template`. The `eventindex` view simply finds the Event (corresponding to that `id`) and calls the template `eventindex`.
 * Templates tell the framework what HTML webpages to construct and return to the web browser. Our templates are in `mycalendar/templates/mycalendar` directory (the tutorial discusses why this specific directory). The `eventindex.html` template file has a mix of python commands and HTML, and it creates an HTML page after executing of the Python commands. The resulting HTML is what is returned and displayed on the browser when you call: `http://localhost:8888/mycalendar/event/1`
 
-**python3 manage.py shell**: This is an important command that allows you to manipulate the data in the database directly (outside of the web application). The file `populate.py` contains the commands used to construct the data in the provided database.
+**python3 manage.py shell**: This is an important command that allows you to manipulate the data in the database directly (outside of the web application). The file `populate.sql` contains the commands used to construct the data in the provided database.
 
 **Database Backend**: Django can work with many database engines, including PostgreSQL (which is recommended for any serious development). Here we are using the `sqlite3` engine, primarily so we can easily provide you with the database (in the `calendarsite/db.sqlite3` file).
 
