@@ -16,10 +16,11 @@ If there was already a record for that `particular county, statecode, candidate,
 with the new information. But if it is a new county, then a new record should be created in the `pres_county_returns` relation.
 
 There are one type of validations that your code should handle: If the `statecode` does not exist in the `states` relation, it should print out an error message and reject the update.
+The message should be: "Invalid <STATECODE>: updates rejected." (with "<STATECODE>" replaced with the correct statecode from the JSON file).
 
 Python has a package called `json` that can do the parsing for you.
 
-The provided `JSONProcessing.py` file already takes care of the input part, and you just need to finish the `processJSON(json_str)` function. An
+The provided `JSONProcessing.py` file already takes care of the input part, and you just need to finish the `processJSON(j)` function. An
 example JSON file is provided: `example.json`. You should also look through the `SQLTesting.py` files from previous assignments for examples of how
 this package can be used.
 
