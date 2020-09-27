@@ -16,7 +16,7 @@ If there was already a record for that `particular county, statecode, candidate,
 with the new information. But if it is a new county, then a new record should be created in the `pres_county_returns` relation.
 
 There are one type of validations that your code should handle: If the `statecode` does not exist in the `states` relation, it should print out an error message and reject the update.
-The message should be: "Invalid <STATECODE>: updates rejected." (with "<STATECODE>" replaced with the correct statecode from the JSON file).
+The message should be: "Invalid statecode STATECODE: updates rejected." (with STATECODE replaced with the correct statecode from the JSON file).
 
 Python has a package called `json` that can do the parsing for you.
 
