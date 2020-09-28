@@ -76,7 +76,7 @@ Submit the final E/R diagram as a PDF file (in Assignment 5, Part 1).
 ### Task 3 (1pt) 
 Modify the `models.py` file according to your new E/R models. You are welcome to try to make it work with the rest of the app, but we only need the models.py file, and the grading will be by inspection, not by running it.
 
-Submit the modified E/R diagram as a PDF file (in Assignment 5, Part 1).
+Submit the modified `models.py` file (in Assignment 5, Part 1).
 
 ### Submission
 Zip the `JSONProcessing.py` file, and the following files together into a single zip file and upload it: 
