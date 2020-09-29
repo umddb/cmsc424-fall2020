@@ -58,7 +58,7 @@ implemented yet.
 
 ### Task 1 (1 pt)
 
-Implement `createcalendar` by adding appropriate functions in `views.py`. You can use `createevent` as a guideline for that. We have added the first view and the URL entry, as well as the template, but clicking on the submit button will give an error (because the path `/submitcreatecalendar` is not implemented). Redirect to userindex at the end.  
+Implement `createcalendar` by adding appropriate functions in `views.py` and `urls.py`. You can use `createevent` as a guideline for that. We have added the first view and the URL entry, as well as the template, but clicking on the submit button will give an error (because the path `/submitcreatecalendar` is not implemented). Redirect to `userindex` at the end.  
 
 ### Task 2 (1pt) 
 
