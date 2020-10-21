@@ -193,7 +193,7 @@ class BTreeBlock(Block):
 			self.keysAndPointers.append(key)
 			self.keysAndPointers.extend(otherBlock.keysAndPointers)
 
-	def redistributeWithBlock(self, otherBlock):
+	def redistributeWithBlock(self, otherBlock, kprime):
 		print("Redistributing entries between " + str(self) + " and " + str(otherBlock))
 		raise ValueError("Functionality to be implemented")
 
@@ -218,7 +218,7 @@ class BTreeBlock(Block):
 			return block2
 		else: 
 			# Need to redistribute pointers between the two and then modify the parent accordingly
-			newKey = block1.redistributeWithBlock(block2)
+			newKey = block1.redistributeWithBlock(block2, key)
 
 			# Replace key with newKey in the parent
 			for index in range(0, len(parentBlock.keysAndPointers), 2):

@@ -2,7 +2,7 @@
 
 *The assignment is to be done by yourself.*
 
-*If you have Python 3 running on your machine, you should be able to just use that -- you don't need to set up Vagrant for this assignment*
+*If you have Python 3 running on your machine, you should be able to just use that -- you don't need to set up Vagrant for this assignment.*
 
 ### Overview
 

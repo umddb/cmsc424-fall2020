@@ -39,7 +39,7 @@ def deleteFromTree(deleteKey):
 # Example of a search can be found in searchExample() above
 searchExample()
 
-if True:
+if False:
 	# A delete that works
 	deleteFromTree("Crick")
 	db1.getIndex("instructor", "name").printTree()
