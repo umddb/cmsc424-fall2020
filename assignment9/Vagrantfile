@@ -68,8 +68,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
      apt-get update
 
-
+     apt install -y python3-pip python3-dev 
      apt-get install -y postgresql postgresql-contrib python3-pip python3-psycopg2 tcsh 
+     pip3 install psycopg2
 
      sudo -u vagrant ln -s /vagrant v
      sudo -u vagrant cp -r /vagrant/{.bashrc,.cshrc} /home/vagrant/
@@ -77,5 +78,11 @@ Vagrant.configure("2") do |config|
      sudo -u vagrant perl -pi -e 's/\r\n/\n/g' .bashrc
      chown -R vagrant ~vagrant/{.cshrc,.bashrc}
 
+     sudo -u postgres createuser -s vagrant
+     echo "alter user vagrant with password 'vagrant';" | sudo -u postgres psql
+     sudo -u vagrant createdb elections
+     sudo -u vagrant psql elections -f /vagrant/populate.sql
+     sudo -u vagrant createdb synthetic
+     sudo -u vagrant psql synthetic -f /vagrant/populate-synthetic.sql
   SHELL
 end

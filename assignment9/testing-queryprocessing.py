@@ -68,12 +68,12 @@ def query5():
 		print("---> " + str(t))
 
 # The following operators work
-#query1()
-#query1a()
-#query2()
-#query3()
+query1()
+query1a()
+query2()
+query3()
 query4()
-#query5()
+query5()
 
 # Full Outer Hash Join
 def query6():
@@ -120,4 +120,4 @@ def query8b():
 	for t in sm.get_next():
 		print("---> " + str(t))
 
-#query8b()
+query8b()
