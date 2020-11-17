@@ -103,8 +103,7 @@ write would typically be small (several would be one-liners), with the exception
 First 8 tasks are worth 0.25 points each, and the remaining 4 are worth 0.5 points each.
 
 - **Task 1**: Write the function that takes as input the `amazonInputRDD` (which is an RDD of lines) and
-`maps` each line to a tuple while removing the initial descriptor, i.e., the first line "user 1
-product1 5.0" gets mapped to a tuple `(1, 1, 5.0)`. This just requires a single `map`.
+`maps` each line to a tuple while removing the initial descriptor, i.e., the first line "user1 product1 5.0" gets mapped to a tuple `(1, 1, 5.0)`. This just requires a single `map`.
 
 
 - **Task 2**: Complete the function that takes as input the `amazonInputRDD` and computes the
