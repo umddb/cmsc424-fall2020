@@ -138,13 +138,13 @@ Try to minimize the number of RDDs you end up creating.
 
 - **Task 10**: Complete a function to calculate the degree distribution of user nodes in the Amazon graph (i.e., `amazonBipartiteRDD`). In other words, calculate the degree of each user node (i.e., number of products each user has rated), and then use a reduceByKey (or aggregateByKey) to find the number of nodes with a given degree. The output should be a PairRDD where the key is the degree, and the value is the number of nodes in the graph with that degree.
 
-- **Task 11**: On the `logsRDD`, for two given days (provided as input analogous to Task 4 above), use a 'cogroup' to create the following RDD: the key of 
+- **Task 11**: On the `logsRDD`, for two given days (provided as input analogous to Task 9 above), use a 'cogroup' to create the following RDD: the key of 
 the RDD will be a host, and the value will be a 2-tuple, where the first element is a list of all URLs fetched from that host on the first day, and the second element
 is the list of all URLs fetched from that host on the second day. Use `filter` to first create two RDDs from the input `logsRDD`.
 
 - **Task 12**: [Bigrams](http://en.wikipedia.org/wiki/Bigram) are sequences of two consecutive words. For example, the previous sentence contains the following bigrams: "Bigrams are", "are simply", "simply sequences", "sequences of", etc. Your task is to write a bigram counting application for counting the bigrams in the `motivation`s of the Nobel Prizes (i.e., the reason they were given the Nobel Prize). The return value should be a PairRDD where the key is a bigram, and the value is its count, i.e., in how many different `motivations` did it appear. Don't assume 'motivation' is always present.
 
-- **Task 13 (No Credit)**: [Maximal Matching] `task8` should implement one iteration of a greedy algorithm for finding a maximal matching in a bipartite graph. 
+- **Task 13 (No Credit)**: [Maximal Matching] `task13` should implement one iteration of a greedy algorithm for finding a maximal matching in a bipartite graph. 
 A *matching* in a graph is a subset of the edges such that no two edges share a vertex (i.e., every vertex is part of at most 1 edge in the matching). A *maximal* matching
 is such that, we cannot add any more edges to it (in other words, there is no remaining edge in the graph both of whose endpoints are unmatched). Here is a simple greedy
 algorithm for finding a maximal matching using map-reduce; note that this is not a particularly good algorithm for solving this problem, but it is easy to parallelize.
